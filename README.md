@@ -1,6 +1,6 @@
 # funcoes-powershell
 Conjunto de funções para uso em Scripts POWERSHELL
-<<<<<<< Updated upstream
+
 =======
 
 Todas as funções foram desenvolvidas por um esepecialista em Redes de Computadores e não um programador.
@@ -24,4 +24,3 @@ Críticas sem sugestões serão prontamente ignoradas.
 Bom proveito a todos.
 
 PS: Por opção tudo será publicado em PT-BR
->>>>>>> Stashed changes
