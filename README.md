@@ -1,4 +1,4 @@
-# funcoes-powershell
+# Funções para Scripts em POWERSHELL
 Conjunto de funções para uso em Scripts POWERSHELL
 
 =======
