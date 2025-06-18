@@ -43,13 +43,18 @@
 				Licença: MIT License
 		#>
         param (
-                [Parameter(Mandatory=$true)]
-                    [string]$dirtocreate,
+                [string]$dirtocreate,
                 [switch]$del_old_dir,
 				[switch]$logs_ashtml,
                 [switch]$asuppercase
               )     
-        $stringsaida = ""
+		if ([string]::IsNullOrWhiteSpace($dirtocreate)) 
+            {
+                Write-Output "Falta Parametro: -dirtocreate (Caminho completo do diretório a ser verificado)"
+                exit 1
+            }
+		
+		$stringsaida = ""
         if ($del_old_dir)
             {
                 if (Test-Path -Path $dirtocreate)
