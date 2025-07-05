@@ -118,6 +118,9 @@
 		#### ADICIONA AS TAGS DE FECHAMENTO HTML SE A FLAG LOGS_ASHTML FOR VERDADEIRA
 		if ($logs_ashtml)
 			{$mailcontent += "</font></body></html>" }
+			
+		[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+		
 		### CRIA UM OBJETO DE CREDENCIAL PARA AUTENTICAÇÃO SMTP
 		$credential = New-Object System.Management.Automation.PSCredential($mail_authen,(ConvertTo-SecureString $mailenvpass -AsPlainText -Force))
 		$commonsplat = @{
