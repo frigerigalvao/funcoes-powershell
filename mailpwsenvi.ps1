@@ -118,7 +118,8 @@
 		#### ADICIONA AS TAGS DE FECHAMENTO HTML SE A FLAG LOGS_ASHTML FOR VERDADEIRA
 		if ($logs_ashtml)
 			{$mailcontent += "</font></body></html>" }
-			
+		
+		#Ajusta certificados
 		[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 		
 		### CRIA UM OBJETO DE CREDENCIAL PARA AUTENTICAÇÃO SMTP
